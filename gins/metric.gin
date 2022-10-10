@@ -1,0 +1,7 @@
+evaluate.beta_VAE_score = True
+evaluate.dci_score = True
+evaluate.factor_VAE_score = True
+evaluate.MIG = True
+evaluate.Sap_score = True
+evaluate.unsupervised_score = True
+evaluate.print_txt = True

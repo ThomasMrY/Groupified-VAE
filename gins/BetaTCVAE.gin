@@ -1,0 +1,15 @@
+main.train_fc = @train_BetaTCVAE2Stage
+main.eval = True
+train_BetaTCVAE2Stage.decoder_dist = "bernoulli"
+train_BetaTCVAE2Stage.lr = 1e-4
+train_BetaTCVAE2Stage.beta1 = 0.9
+train_BetaTCVAE2Stage.beta2 = 0.999
+train_BetaTCVAE2Stage.weight = 1.0
+train_BetaTCVAE2Stage.save_step = 1000
+train_BetaTCVAE2Stage.max_iter = 50000
+train_BetaTCVAE2Stage.fst_iter = 2000
+train_BetaTCVAE2Stage.visualize = False
+get_model.z_dim = 10
+get_model.N = 10
+get_model.my_net = @BetaTCVAE
+return_data.Dataset_fc = @CustomTensorDatasetfor1

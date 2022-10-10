@@ -1,0 +1,15 @@
+main.train_fc = @train_BetaVAE
+main.eval = True
+train_BetaVAE.decoder_dist = "bernoulli"
+train_BetaVAE.objective = 'H'
+train_BetaVAE.lr = 1e-4
+train_BetaVAE.beta1 = 0.9
+train_BetaVAE.beta2 = 0.999
+train_BetaVAE.weight = 1.0
+train_BetaVAE.display_step = 1000
+train_BetaVAE.save_step = 1000
+train_BetaVAE.visualize = True
+get_model.z_dim = 10
+get_model.N = 15
+get_model.my_net = @BetaVAE_B
+return_data.Dataset_fc = @CustomTensorDatasetfor1

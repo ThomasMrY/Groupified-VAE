@@ -115,7 +115,7 @@ python main.py --config_num = 1000 --eval
 ![image](./images/downstream.PNG)
 
 
-## BibTeX
+## Citation
 
 ```bibtex
 @article{Tao2022groupified,
